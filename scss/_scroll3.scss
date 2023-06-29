@@ -1,0 +1,40 @@
+.scroll_3 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #3A9679;
+    opacity: 0;
+
+    .container {
+        width: 100%;
+        position: absolute;
+
+        > div {
+            display: flex;
+    
+            > div {
+                font: 6.5vw 'LeferiPoint-SpecialItalicA';
+                color: white;
+                margin-left: 2vw;
+                opacity: 0;
+
+                &.w3, &.w6 {
+                    animation: 1s rainbow infinite;
+                }
+            }
+        }
+    }
+}
+
+@keyframes rainbow {     
+    0% { color: #ff2a2a; }
+    15% { color: #ff7a2a; }
+    30% { color: #ffc52a; }
+    45% { color: #43ff2a; }
+    60% { color: #2a89ff; }
+    75% { color: #202082; }
+    90% { color: #6b2aff; } 
+    100% { color: #e82aff; }
+}
